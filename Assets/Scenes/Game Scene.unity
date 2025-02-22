@@ -446,7 +446,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 389650955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bae0bec92a55e4e891205bad1bf961, type: 3}
+  m_Script: {fileID: 11500000, guid: 3948778b1ed98194f8a8842789975b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counterText: {fileID: 609341110}
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_text: Count
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -900,14 +900,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1214718022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad6e2e6b9ae225e4eaf853e9024eb59f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c67928650ca6b744a5a594557602ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 2797919856551503567, guid: e0a2303793eb1984f9807d51e744e47f, type: 3}
+  ball: {fileID: 2797919856551503567, guid: 8118cee63b40a9a4abd1060e91ee1107, type: 3}
   spawnPoint: {fileID: 1997098462}
   spawnRate: 2
-  minAngle: 0
-  maxAngle: 45
+  minAngle: -9
+  maxAngle: 10
   speed: 5
 --- !u!1 &1997098459
 GameObject:
