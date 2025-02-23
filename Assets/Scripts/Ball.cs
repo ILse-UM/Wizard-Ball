@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    public int damage = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +14,16 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < -5.0f)
+
+    }
+
+        void OnTriggerEnter2D(Collider2D collision)
+    {
+        Wizard wizard = collision.GetComponent<Wizard>();
+        if (wizard != null)
         {
-            Destroy(gameObject);
+            wizard.TakeDamage(damage);
+            Destroy(gameObject); // Hancurkan fireball setelah terkena target
         }
     }
 }
