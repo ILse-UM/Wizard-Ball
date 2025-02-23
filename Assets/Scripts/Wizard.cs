@@ -22,17 +22,22 @@ public abstract class Wizard : MonoBehaviour
         }
     }
 
-    public void Die() {
-        Debug.Log(name + " has died!");
-        
-        if (gameObject.CompareTag("Player")) {
-            
-        }
-        else {
-            
-        }
-        GameManager.GameOver();
+    void Die()
+{
+    if (gameObject.CompareTag("Player"))
+    {
+        GameDataManager.instance.Lose();
+        Debug.Log("Player kalah! Lose Count: " + GameDataManager.instance.loseCount);
     }
+    else if (gameObject.CompareTag("Enemy"))
+    {
+        GameDataManager.instance.Win();
+        Debug.Log("Enemy kalah! Win Count: " + GameDataManager.instance.winCount);
+    }
+
+    Destroy(gameObject);
+    UnityEngine.SceneManagement.SceneManager.LoadScene("Title Screen"); // Pindah ke scene Game Over
+}
 
     public void Move(float direction) {
         float newY = transform.position.y + (direction * speed * Time.deltaTime);

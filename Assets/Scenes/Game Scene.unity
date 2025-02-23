@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 384467436}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -482,11 +482,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41636276, y: 0.69569016}
   m_EdgeRadius: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3948778b1ed98194f8a8842789975b38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  counterText: {fileID: 609341110}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1247,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c67928650ca6b744a5a594557602ce1, type: 3}
-  m_Script: {fileID: 11500000, guid: 9c67928650ca6b744a5a594557602ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1301271988
@@ -1389,12 +1383,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301271988}
   m_CullTransparentMesh: 1
-  ball: {fileID: 2797919856551503567, guid: 8118cee63b40a9a4abd1060e91ee1107, type: 3}
-  spawnPoint: {fileID: 1997098462}
-  spawnRate: 2
-  minAngle: -9
-  maxAngle: 10
-  speed: 5
 --- !u!1 &1997098459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1398,7 @@ GameObject:
   - component: {fileID: 1997098464}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
