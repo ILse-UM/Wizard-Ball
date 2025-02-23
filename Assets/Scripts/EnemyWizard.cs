@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class EnemyWizard : Wizard
 {
     public Transform player;
@@ -10,6 +11,8 @@ public class EnemyWizard : Wizard
     public float moveDuration = 2f;
     public float yMin = -3.5f;
     public float yMax = 3.5f;
+
+    // ENCAPSULATION
     private float moveTimer;
     private float moveDirection;
 
@@ -29,6 +32,8 @@ public class EnemyWizard : Wizard
             SetRandomDirection();
         }
     }
+
+    // POLYMORPHISM
     public override void Attack()
     {
         ShootProjectile();

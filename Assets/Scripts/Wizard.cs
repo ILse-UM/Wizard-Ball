@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// ABSTRACTION
 public abstract class Wizard : MonoBehaviour
 {
     [SerializeField] private int health = 3;
     [SerializeField] protected float speed = 5f;
 
+// ABSTRACTION
     public abstract void Attack();
 
     public void TakeDamage(int damage)
